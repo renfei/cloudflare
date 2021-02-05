@@ -11,7 +11,7 @@ jdk:
 #    - master
 
 script:
-  - mvn clean package -B -f pom.xml
+  - mvn clean package -DskipTests=true -B -f pom.xml
 
 matrix:
   allow_failures:
