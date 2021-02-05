@@ -8,7 +8,7 @@ Note: the copyright of cloudflare® graphic trademark belongs to cloudflare, Inc
 [![Maven Version](https://img.shields.io/maven-central/v/net.renfei/cloudflare.svg?label=Maven%20Central)](https://search.maven.org/search?q=g:%22net.renfei%22%20AND%20a:%22cloudflare%22)
 ![Release Version](https://img.shields.io/github/v/release/renfei/cloudflare.svg?style=flat-square&label=Release&color=1784ff)
 [![Actions Status](https://github.com/renfei/cloudflare/workflows/Build/badge.svg)](https://github.com/renfei/cloudflare/actions)
-[![Travis Status](https://travis-ci.org/renfei/cloudflare.svg?branch=master)](https://travis-ci.org/renfei/cloudflare)
+[![Travis Status](https://travis-ci.com/renfei/cloudflare.svg?branch=master)](https://travis-ci.com/github/renfei/cloudflare)
 [![License](https://img.shields.io/badge/license-Apache_2.0-blue.svg?style=flat)](https://github.com/renfei/cloudflare/blob/master/LICENSE)
 
 This Cloudflare Client with [Cloudflare's fast API v4](https://api.cloudflare.com/) and allows you to access every single feature of Cloudflare's API faster and much easier!  
