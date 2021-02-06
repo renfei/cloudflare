@@ -32,11 +32,29 @@ dependencies {
 ```
 
 ## Getting Started
-Getting Started
+First, you define the access object.
+```java
+String CF_API_TOKEN = "your_cloudflare_api_token";
+Cloudflare cloudflare = new Cloudflare(CF_API_TOKEN);
+```
+
+Then you can create cloudflare requests.
+```java
+String CF_API_TOKEN = "your_cloudflare_api_token";
+Cloudflare cloudflare = new Cloudflare(CF_API_TOKEN);
+
+List<Zone> zones = cloudflare.zone.getListZones();
+
+Map<String, Object> paramMap = new HashMap<>();
+paramMap.put("match", "all");
+paramMap.put("page", 1);
+paramMap.put("per_page", 100);
+List<DnsRecords> dnsRecords = cloudflare.dnsRecords.getListDnsRecord(zones.get(0).getId(), paramMap);
+```
 
 ## Supported Endpoints
 - [x] User
-- [ ] User API Tokens
+- [x] User API Tokens
 - [ ] Permission Groups
 - [ ] User's Account Memberships
 - [ ] Accounts

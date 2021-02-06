@@ -2,6 +2,7 @@ package net.renfei.cloudflare;
 
 import net.renfei.cloudflare.dns.DnsRecordsApi;
 import net.renfei.cloudflare.user.UserApi;
+import net.renfei.cloudflare.user.UserApiTokensApi;
 import net.renfei.cloudflare.zone.ZoneApi;
 
 /**
@@ -12,6 +13,7 @@ import net.renfei.cloudflare.zone.ZoneApi;
  */
 public class Cloudflare {
     public UserApi user;
+    public UserApiTokensApi userApiTokens;
     public ZoneApi zone;
     public DnsRecordsApi dnsRecords;
 
@@ -19,8 +21,9 @@ public class Cloudflare {
     }
 
     public Cloudflare(String apiToken) {
-        user = new UserApi(apiToken);
-        zone = new ZoneApi(apiToken);
-        dnsRecords = new DnsRecordsApi(apiToken);
+        this.user = new UserApi(apiToken);
+        this.userApiTokens = new UserApiTokensApi(apiToken);
+        this.zone = new ZoneApi(apiToken);
+        this.dnsRecords = new DnsRecordsApi(apiToken);
     }
 }

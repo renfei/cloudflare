@@ -32,11 +32,29 @@ dependencies {
 ```
 
 ## 使用入门
-使用入门
+首先，定义访问对象。
+```java
+String CF_API_TOKEN = "your_cloudflare_api_token";
+Cloudflare cloudflare = new Cloudflare(CF_API_TOKEN);
+```
+
+然后可以创建cloudflare请求。
+```java
+String CF_API_TOKEN = "your_cloudflare_api_token";
+Cloudflare cloudflare = new Cloudflare(CF_API_TOKEN);
+
+List<Zone> zones = cloudflare.zone.getListZones();
+
+Map<String, Object> paramMap = new HashMap<>();
+paramMap.put("match", "all");
+paramMap.put("page", 1);
+paramMap.put("per_page", 100);
+List<DnsRecords> dnsRecords = cloudflare.dnsRecords.getListDnsRecord(zones.get(0).getId(), paramMap);
+```
 
 ## 支持的接口端点
 - [x] User
-- [ ] User API Tokens
+- [x] User API Tokens
 - [ ] Permission Groups
 - [ ] User's Account Memberships
 - [ ] Accounts
