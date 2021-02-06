@@ -20,18 +20,20 @@ To add a dependency on this Cloudflare Client using Maven or Gradle use the foll
 <dependency>
   <groupId>net.renfei</groupId>
   <artifactId>cloudflare</artifactId>
-  <version>0.0.2</version>
+  <version>0.0.3</version>
 </dependency>
 ```
 
 **Gradle:**
 ```
 dependencies {
-  compile 'net.renfei:cloudflare:0.0.1'
+  compile 'net.renfei:cloudflare:0.0.3'
 }
 ```
 
 ## Getting Started
+API Token management:[https://dash.cloudflare.com/profile/api-tokens](https://dash.cloudflare.com/profile/api-tokens)
+
 First, you define the access object.
 ```java
 String CF_API_TOKEN = "your_cloudflare_api_token";

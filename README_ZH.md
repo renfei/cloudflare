@@ -20,18 +20,20 @@
 <dependency>
   <groupId>net.renfei</groupId>
   <artifactId>cloudflare</artifactId>
-  <version>0.0.2</version>
+  <version>0.0.3</version>
 </dependency>
 ```
 
 **Gradle:**
 ```
 dependencies {
-  compile 'net.renfei:cloudflare:0.0.1'
+  compile 'net.renfei:cloudflare:0.0.3'
 }
 ```
 
 ## 使用入门
+API Token 管理：[https://dash.cloudflare.com/profile/api-tokens](https://dash.cloudflare.com/profile/api-tokens)
+
 首先，定义访问对象。
 ```java
 String CF_API_TOKEN = "your_cloudflare_api_token";
