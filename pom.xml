@@ -6,7 +6,7 @@
 
     <groupId>net.renfei</groupId>
     <artifactId>cloudflare</artifactId>
-    <version>0.0.1</version>
+    <version>0.0.2</version>
     <packaging>jar</packaging>
     <name>cloudflare</name>
     <url>http://www.renfei.net</url>
@@ -50,7 +50,7 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <java.version>1.8</java.version>
-        <renfei-sdk.version>1.0.7</renfei-sdk.version>
+        <renfei-sdk.version>1.0.9</renfei-sdk.version>
         <lombok.version>1.18.16</lombok.version>
     </properties>
 

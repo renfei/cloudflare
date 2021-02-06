@@ -20,7 +20,7 @@ To add a dependency on this Cloudflare Client using Maven or Gradle use the foll
 <dependency>
   <groupId>net.renfei</groupId>
   <artifactId>cloudflare</artifactId>
-  <version>0.0.1</version>
+  <version>0.0.2</version>
 </dependency>
 ```
 
@@ -64,7 +64,7 @@ Getting Started
 - [ ] Zone Analytics
 - [ ] Logs Received
 - [ ] Logpush Jobs
-- [ ] DNS Records for a Zone
+- [x] DNS Records for a Zone
 - [ ] DNS Analytics
 - [ ] DNSSEC
 - [ ] DNS Firewall

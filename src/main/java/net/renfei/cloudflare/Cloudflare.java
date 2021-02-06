@@ -1,6 +1,6 @@
 package net.renfei.cloudflare;
 
-import lombok.Data;
+import net.renfei.cloudflare.dns.DnsRecordsApi;
 import net.renfei.cloudflare.user.UserApi;
 import net.renfei.cloudflare.zone.ZoneApi;
 
@@ -10,10 +10,10 @@ import net.renfei.cloudflare.zone.ZoneApi;
  *
  * @author RenFei
  */
-@Data
 public class Cloudflare {
-    private UserApi user;
-    private ZoneApi zone;
+    public UserApi user;
+    public ZoneApi zone;
+    public DnsRecordsApi dnsRecords;
 
     private Cloudflare() {
     }
@@ -21,5 +21,6 @@ public class Cloudflare {
     public Cloudflare(String apiToken) {
         user = new UserApi(apiToken);
         zone = new ZoneApi(apiToken);
+        dnsRecords = new DnsRecordsApi(apiToken);
     }
 }

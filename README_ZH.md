@@ -20,7 +20,7 @@
 <dependency>
   <groupId>net.renfei</groupId>
   <artifactId>cloudflare</artifactId>
-  <version>0.0.1</version>
+  <version>0.0.2</version>
 </dependency>
 ```
 
@@ -64,7 +64,7 @@ dependencies {
 - [ ] Zone Analytics
 - [ ] Logs Received
 - [ ] Logpush Jobs
-- [ ] DNS Records for a Zone
+- [x] DNS Records for a Zone
 - [ ] DNS Analytics
 - [ ] DNSSEC
 - [ ] DNS Firewall

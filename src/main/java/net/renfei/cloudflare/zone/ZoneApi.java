@@ -4,21 +4,10 @@ import com.alibaba.fastjson.JSON;
 import net.renfei.cloudflare.CloudflareException;
 import net.renfei.cloudflare.CloudflareInterface;
 import net.renfei.cloudflare.entity.*;
-import net.renfei.sdk.http.HttpEntityType;
 import net.renfei.sdk.http.HttpRequest;
 import net.renfei.sdk.utils.HttpUtils;
-import org.apache.http.HttpResponse;
-import org.apache.http.client.HttpClient;
-import org.apache.http.client.methods.HttpPost;
-import org.apache.http.client.protocol.HttpClientContext;
-import org.apache.http.entity.ContentType;
-import org.apache.http.entity.StringEntity;
-import org.apache.http.impl.client.DefaultHttpClient;
-import org.apache.http.impl.client.HttpClientBuilder;
-import org.apache.http.protocol.BasicHttpContext;
 
 import java.io.IOException;
-import java.nio.charset.Charset;
 import java.util.List;
 
 /**
