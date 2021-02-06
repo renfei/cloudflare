@@ -35,7 +35,7 @@ dependencies {
 使用入门
 
 ## 支持的接口端点
-- [ ] User
+- [x] User
 - [ ] User API Tokens
 - [ ] Permission Groups
 - [ ] User's Account Memberships

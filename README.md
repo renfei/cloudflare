@@ -35,7 +35,7 @@ dependencies {
 Getting Started
 
 ## Supported Endpoints
-- [ ] User
+- [x] User
 - [ ] User API Tokens
 - [ ] Permission Groups
 - [ ] User's Account Memberships
