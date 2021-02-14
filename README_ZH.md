@@ -54,6 +54,9 @@ paramMap.put("per_page", 100);
 List<DnsRecords> dnsRecords = cloudflare.dnsRecords.getListDnsRecord(zones.get(0).getId(), paramMap);
 ```
 
+## 实践案例
+- [ddns-for-cloudflare](https://gitee.com/rnf/ddns-for-cloudflare)
+
 ## 支持的接口端点
 - [x] User
 - [x] User API Tokens

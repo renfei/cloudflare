@@ -54,6 +54,9 @@ paramMap.put("per_page", 100);
 List<DnsRecords> dnsRecords = cloudflare.dnsRecords.getListDnsRecord(zones.get(0).getId(), paramMap);
 ```
 
+## Practice cases
+- [ddns-for-cloudflare](https://github.com/renfei/ddns-for-cloudflare)
+
 ## Supported Endpoints
 - [x] User
 - [x] User API Tokens
