@@ -26,10 +26,14 @@ jobs:
       - name: Test with Maven
         run: mvn clean test jacoco:report --file pom.xml -Dcloudflare_api_key=${{ secrets.CLOUDFLARE_API_KEY }}
 
-      - name: Upload coverage to Codecov
-        run: bash <(curl -s https://codecov.io/bash) -s jacoco-aggregate/
-
       - name: Upload coverage to Coveralls
         run: |
           sed -i.bak 's/yourcoverallsprojectrepositorytoken/${{ secrets.COVERALLS_TOKEN }}/g' pom.xml
           mvn -P ci coveralls:report
+
+      - uses: codecov/codecov-action@v2
+      - name: Upload coverage to Codecov
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
+          files: ./target/coverage-reports/jacoco.xml
+          verbose: true
