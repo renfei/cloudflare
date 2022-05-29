@@ -31,8 +31,8 @@ jobs:
           sed -i.bak 's/yourcoverallsprojectrepositorytoken/${{ secrets.COVERALLS_TOKEN }}/g' pom.xml
           mvn -P ci coveralls:report
 
-      - uses: codecov/codecov-action@v2
       - name: Upload coverage to Codecov
+        uses: codecov/codecov-action@v2
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
           files: ./target/coverage-reports/jacoco.xml
